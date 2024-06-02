@@ -31,6 +31,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.listBoxTemplates = new System.Windows.Forms.ListBox();
             this.txtOutputPath = new System.Windows.Forms.TextBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
@@ -202,6 +203,7 @@
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.txtOutputPath);
             this.Controls.Add(this.listBoxTemplates);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Генератор документів";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
